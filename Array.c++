@@ -17,7 +17,7 @@
 //     cout<<ele<<endl;
 // }
 //*****                INPUT OF THE ARRAY  */
-  char vowels[5];
+  // char vowels[5];
 //   for(int i=0;i<5;i++){
 //     cin>>vowels[i];
 //   }
@@ -25,20 +25,48 @@
 //     cout<<vowels[i]<<endl;
 //   }
 
-for(char element:vowels){
-  cin>>element;
-}
+// for(char &element:vowels){
+//   cin>>element;
+// }
+// for(int idx=0;idx<5;idx++){
+//   cout<<vowels[idx]<<" ";
+// }
+// Question : calculate the sum of all the elements in the given array 
 
+//   int array[]={3,4,10,11};
+//   int size=sizeof(array)/sizeof(array[0]);
 
+//   int sum=0;
+// for(int i=0;i<size;i++){
+//   sum +=array[i];
+// }
+// cout<<sum<<endl;
 
+//Ouestion : Find the maximum number of the array 
+// int array[]={13,4,10,11};
+// int min;
+// int size=sizeof(array)/sizeof(array[0]);
+//  min=array[0];
+// for(int i=0;i<size;i++){
+//   if(array[i]< min){
+//     min =array[i];
+//   }
+// }
+//  cout<<min<<endl;
 
+  //************************************   LINEAR SEARCH     */
 
-
-
-
-
-
-
+   int array[]={3,9,18,11,7};
+   int size=sizeof(array)/sizeof(array[0]);
+   int key=7;
+   int ans=-1;
+   for(int i=0;i<size; i++){
+    if(array[i]==key){
+      ans=i;
+    }
+   
+   }
+   cout<<ans<<endl;
 
     return 0;
  }
